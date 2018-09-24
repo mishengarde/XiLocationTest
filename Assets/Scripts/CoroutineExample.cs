@@ -14,7 +14,8 @@ public class CoroutineExample : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        StartCoroutine(FadeColor(Color.black)); //calling Color.black as variable TargetColor
+        StartCoroutine(FadeColor(Color.black));
+        //calling Color.black as variable TargetColor
 
     }
 
@@ -29,7 +30,8 @@ public class CoroutineExample : MonoBehaviour
 
     IEnumerator FadeColor(Color TargetColor)
     {
-        Color StartColor = new Color(1f, 0.05f, 0.5f); //Color.black or simple colors exist, otherwise specify RGB
+        Color StartColor = new Color(1f, 0.05f, 0.5f);
+        //Color.black or simple colors exist, otherwise specify RGB
 
         //how long the fade takes, in seconds
         float duration = 2f;
